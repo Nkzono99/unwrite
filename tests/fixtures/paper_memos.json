@@ -1,0 +1,36 @@
+{
+  "unwrite": 1,
+  "memos": [
+    {"slot": "1", "point": "先行研究ではクレーターの壁が強く負に帯電することが分かっている。",
+     "items": [{"text": "以前の PIC 計算で、クレーターの壁は周囲のプラズマに対して \\wallPot V まで帯電した",
+                "atoms": {"numbers": ["\\wallPot"]}, "stance": "cited", "source": ["s002"]}],
+     "role": "要旨。本文の背景と結果をまとめる。", "source": ["s002"]},
+    {"slot": "2", "point": "地形が表面帯電にどう効くかはまだ分かっておらず、本論文はクレーターの大きさと表面電位の関係を調べる。",
+     "items": [
+       {"text": "大気のない天体では表面の帯電が地表近くのプラズマのでき方を左右する", "source": ["s004"]},
+       {"text": "昼側は光電子の放出、夜側は太陽風電子が電流の釣り合いを決める",
+        "atoms": {"refs": ["Whipple1981", "Nitter1998"]}, "stance": "cited", "source": ["s005"]},
+       {"text": "小さな地形の効果は未解明", "source": ["s006"]},
+       {"text": "PIC 計算ではクレーターの壁が \\wallPot V まで帯電した例がある",
+        "atoms": {"numbers": ["\\wallPot"], "refs": ["Zimmerman2016"]}, "stance": "cited", "source": ["s007"]},
+       {"text": "問い: クレーターの大きさで表面電位がどう変わるか", "source": ["s008"]}],
+     "role": "序論の一段落。背景から問いまで。", "source": ["s004", "s005", "s006", "s007", "s008"]},
+    {"slot": "3", "point": "三次元 PIC コードで、太陽風と光電子を入れた計算を行う。",
+     "items": [
+       {"text": "コードは EMSES（三次元 PIC）", "atoms": {"refs": ["Miyake2009"]}, "source": ["s010"]},
+       {"text": "格子間隔は Debye 長の半分", "atoms": {"numbers": ["0.5"], "eqs": ["$\\Delta x = 0.5\\lambda_D$"]}, "source": ["s011"]},
+       {"text": "太陽風は 400 km/s、密度 5 cm^-3", "atoms": {"numbers": ["400 km/s", "5 cm$^{-3}$"]}, "source": ["s012"]},
+       {"text": "光電子の電流密度は太陽天頂角の余弦に比例させる", "atoms": {"eqs": ["J_{ph} = J_{ph0} \\cos\\theta"], "labels": ["eq:jph"]}, "source": ["s013", "s014"]}],
+     "role": "方法。結果の前提をそろえる。", "source": ["s010", "s011", "s012", "s013"]},
+    {"slot": "3b", "point": "式の記号の説明。",
+     "items": [{"text": "θ は太陽天頂角", "source": ["s015"]}],
+     "role": "直前の式を受ける。", "source": ["s015"]},
+    {"slot": "4", "point": "クレーターが大きいほど底の電位は下がり、光電子シースより大きくなると頭打ちになる。",
+     "items": [
+       {"text": "半径を大きくすると底の電位が下がる（図）", "atoms": {"labels": ["fig:pot"]}, "source": ["s017", "s021"]},
+       {"text": "半径 10 λ_D で底は \\floorPot V", "atoms": {"numbers": ["10", "\\floorPot"]}, "source": ["s018"]},
+       {"text": "半径が光電子シースの厚さを超えると変化が止まる", "source": ["s019"]}],
+     "role": "結果。序論の問いに答える。", "source": ["s017", "s018", "s019", "s020"]}
+  ],
+  "dropped": []
+}

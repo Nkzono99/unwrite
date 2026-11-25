@@ -1,0 +1,14 @@
+{
+  "name": "unwrite",
+  "owner": {"name": "Nkzono99", "url": "https://github.com/Nkzono99"},
+  "metadata": {"description": "unwrite: paragraph memos and manuscript skeletons from AI-written paper drafts."},
+  "plugins": [
+    {
+      "name": "unwrite",
+      "description": "Break an AI-written paper draft into paragraph memos and a commented manuscript skeleton for a human to write.",
+      "source": "./",
+      "category": "productivity",
+      "homepage": "https://github.com/Nkzono99/unwrite"
+    }
+  ]
+}

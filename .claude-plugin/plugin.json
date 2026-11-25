@@ -1,0 +1,10 @@
+{
+  "name": "unwrite",
+  "version": "0.1.0",
+  "description": "Unwrite an AI-written paper draft: break it into paragraph memos (point, material, flow) and lay them as TeX comments into a manuscript skeleton in a separate directory, for a human to write in their own words.",
+  "author": {"name": "Nkzono99", "url": "https://github.com/Nkzono99"},
+  "homepage": "https://github.com/Nkzono99/unwrite",
+  "repository": "https://github.com/Nkzono99/unwrite",
+  "keywords": ["paper", "writing", "latex", "paperops", "skills"],
+  "skills": "./skills/"
+}

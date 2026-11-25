@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+# Run unwrite from this checkout / plugin without installing it: pick a Python >= 3.9.
+root="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+for py in "${UNWRITE_PYTHON:-}" python3.13 python3.12 python3.11 python3.10 python3.9 python3 python; do
+  [ -n "$py" ] || continue
+  command -v "$py" >/dev/null 2>&1 || continue
+  if "$py" -c 'import sys; sys.exit(sys.version_info < (3, 9))' 2>/dev/null; then
+    PYTHONPATH="$root${PYTHONPATH:+:$PYTHONPATH}" exec "$py" -m unwrite "$@"
+  fi
+done
+echo "unwrite: Python 3.9 以上が見つからない（UNWRITE_PYTHON で指定できる）" >&2
+exit 127
