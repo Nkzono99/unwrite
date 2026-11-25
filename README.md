@@ -4,11 +4,18 @@
 メモを TeX コメントで入れた原稿の骨組みを別ディレクトリに作る。人間はメモだけを見て自分の文章で書く。
 設計は [docs/design.md](docs/design.md)。
 
-## Claude Code の plugin として使う
+## plugin として使う（Claude Code / Codex）
 
 ```
 /plugin marketplace add Nkzono99/unwrite
 /plugin install unwrite@unwrite
+```
+
+Codex では
+
+```
+codex plugin marketplace add Nkzono99/unwrite
+codex plugin add unwrite@unwrite
 ```
 
 入れたあとは「この草稿を unwrite して」（paperops の project のパスを添える）と頼むと、skill `unwrite` が
@@ -28,3 +35,7 @@ bin/unwrite skeleton <workspace>   # manuscript/sections/*.tex に骨組み: 段
 人間は `<workspace>/manuscript/sections/*.tex` のメモの下に書く。書いた原稿の照合は unwrite の範囲外。
 
 依存は標準ライブラリだけ（Python ≥ 3.9）。テストは `python3.11 -m pytest`。
+
+## License
+
+Apache License 2.0（[LICENSE](LICENSE)）。

@@ -1,0 +1,21 @@
+{
+  "name": "unwrite",
+  "interface": {
+    "displayName": "unwrite"
+  },
+  "plugins": [
+    {
+      "name": "unwrite",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/Nkzono99/unwrite.git",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

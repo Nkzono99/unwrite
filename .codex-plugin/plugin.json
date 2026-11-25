@@ -1,0 +1,37 @@
+{
+  "name": "unwrite",
+  "version": "0.1.0",
+  "description": "Unwrite an AI-written paper draft: break it into paragraph memos (point, material, flow) and lay them as TeX comments into a manuscript skeleton in a separate directory, for a human to write in their own words.",
+  "author": {
+    "name": "Nkzono99",
+    "url": "https://github.com/Nkzono99"
+  },
+  "homepage": "https://github.com/Nkzono99/unwrite",
+  "repository": "https://github.com/Nkzono99/unwrite",
+  "license": "Apache-2.0",
+  "keywords": [
+    "paper",
+    "writing",
+    "latex",
+    "paperops",
+    "codex",
+    "skills"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "unwrite",
+    "shortDescription": "Turn an AI-written paper draft into paragraph memos and a commented manuscript skeleton.",
+    "longDescription": "Seals a paperops draft, has the agent write one memo per paragraph (what it wants to say, the material it must carry, how it connects), lints the memos for coverage, verbatim atoms (numbers, citations, labels, equations) and copied wording, and writes a manuscript skeleton in a separate workspace with the memos as TeX comments, so that a human writes the paragraphs in their own words.",
+    "developerName": "Nkzono99",
+    "category": "Productivity",
+    "websiteURL": "https://github.com/Nkzono99/unwrite",
+    "capabilities": [
+      "Read",
+      "Write"
+    ],
+    "defaultPrompt": [
+      "Use unwrite on this paperops draft.",
+      "Use unwrite to rebuild the manuscript skeleton after fixing memos."
+    ]
+  }
+}
